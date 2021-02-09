@@ -3,40 +3,39 @@
 }
 
 header{
-    background-color: grey;
-    color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+}
+
+.header_title, .nav_link{
+
+     height: 100px;
+}
+
+.header_title{
+    background-image: linear-gradient(to top right, yellow, orange);
+    flex: 4;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 75%;
-    margin: 0 auto;
-}
-
-header .header_name{
-    font-weight: 500;
-    font-size: 50px;
-    margin: 15px 60px;
-    background-color: tomato;
-}
-
-nav{
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .nav_link{
+    background-image: linear-gradient(to top right, red, orange);
     flex: 1;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 90px;
-    background-color: violet;
-    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main_content{
-    width: 75%;
-    height: 1000px;
-    margin: 0 auto;
-    background-color: teal;
+.header_title h1{
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.nav_link h4{
+    font-weight: 100;
+    font-size: 17px;
+
 }
