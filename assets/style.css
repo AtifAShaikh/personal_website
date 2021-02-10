@@ -48,7 +48,7 @@ section{
 }
 
 section h1{
-    background-color: turquoise;
+    background-color:thistle;
     margin: 0 30px;
     font-weight: 100;
     font-size: 40px;
@@ -56,7 +56,7 @@ section h1{
 
 .section_content{
     margin: 20px 20px;
-    background-color: rgb(229, 255, 0);
+    background-color: thistle;
 
 }
 
@@ -72,7 +72,7 @@ section h1{
 
 .about_me .section_content .image{
     flex: 1;
-    background-image: linear-gradient(to top right, red, orange);
+    background-color: thistle;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ section h1{
 
 .about_me .section_content .blurb{
     flex: 2;
-    background-image: linear-gradient(to top right, red, orange);
+    background-color: thistle;
 }
 
 .my_image{
@@ -91,3 +91,41 @@ section h1{
 .blurb{
     font-size: 20px;
 }
+
+.portfolio_nav{
+    display: flex;
+    margin-left: 50px;
+}
+
+.port_tab{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.all{
+    background-color: #ba79bd;
+}
+
+.html{
+    background:#c32148;
+}
+
+.wordpress{
+    background-color: #21759b;
+}
+
+.unity{
+    background-color: #00a698;
+}
+
+.card_container{
+    height: 400px;
+    background-color: #ba79bd;
+    border-radius: 15px;
+}
+
