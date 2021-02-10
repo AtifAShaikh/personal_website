@@ -39,3 +39,55 @@ header{
     font-size: 17px;
 
 }
+
+section{
+    background-color: thistle;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0px 0px;
+}
+
+section h1{
+    background-color: turquoise;
+    margin: 0 30px;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.section_content{
+    margin: 20px 20px;
+    background-color: rgb(229, 255, 0);
+
+}
+
+.line{
+    height: 4px;
+    background-color: black;
+    margin: 0px 15px;
+}
+
+.about_me .section_content{
+    display: flex;
+}
+
+.about_me .section_content .image{
+    flex: 1;
+    background-image: linear-gradient(to top right, red, orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me .section_content .blurb{
+    flex: 2;
+    background-image: linear-gradient(to top right, red, orange);
+}
+
+.my_image{
+    height: 300px;
+    width: 300px;
+}
+
+.blurb{
+    font-size: 20px;
+}
