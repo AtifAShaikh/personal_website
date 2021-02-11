@@ -9,21 +9,26 @@
         <div class="header_title">
             <h1>Atif Shaikh</h1>
         </div>
-        <div class="nav_link">
-            <h4>Portfolio</h4>
-        </div>
-        <div class="nav_link">
-            <h4>Resume</h4>
-        </div>
-        <div class="nav_link">
-            <h4>Github</h4>
-        </div>
-        <div class="nav_link">
-            <h4>Linkedin</h4>
-        </div>
-        <div class="nav_link contact">
-            <h4>Contact Me</h4>
-        </div>
+        <a href="#portfolio" class="nav_link">
+                <h4>Portfolio</h4>
+        </a>
+        <a href="" class="nav_link">
+                <h4>Resume</h4>
+        </a>
+        <a href="https://github.com/AtifAShaikh" class="nav_link">
+                <h4>Github</h4>
+        </a>
+        <a href="" class="nav_link">
+                <h4>Linkedin</h4>
+        </a>
+        <a href="#contact" class="nav_link contact">
+                <h4>Contact Me</h4>
+        </a>
+        <a class="nav_link contact menu">
+            <div class="menu_bar"></div>
+            <div class="menu_bar"></div>
+            <div class="menu_bar"></div>
+        </a>
     </header>
     <section class="about_me">
         <div class="section_title">
@@ -37,10 +42,9 @@
                 Hello, My name is Atif Shaikh. I am an aspiring web developer and programmer.
             </div>
         </div>
-        <!-- <div class="line"></div> -->
     </section>
     <section>
-        <div class="section_title">
+        <div class="section_title" id="portfolio">
             <h1>Portfolio</h1>
         </div>
         <div class="section_content">
@@ -60,12 +64,6 @@
                     </div>
                 </div>
                 <div class="card_container" id="card_container">
-                    <!-- this is a generic card template -->
-                    <!-- <div class="card">
-                        <h3>Title</h3>
-                        <img>
-                        <div class="sub_area">read more...</div>
-                    </div> -->
                     <div class="card html_card">
                         <img>
                         <h3>Title</h3>
@@ -106,18 +104,16 @@
             </div>
         </div>
         <script src="./assets/portfolioScript.js"></script>
-        <!-- <div class="line"></div> -->
     </section>
-    <section>
+    <section id="contact">
         <div class="section_title">
             <h1>Contact Me</h1>
         </div>
         <div class="section_content contact_container">
             <div class="contact_item">Phone: 310-755-5217</div>
             <div class="contact_item">Email: atifsha05@gmail.com</div>
-            <div class="contact_item contact_link">Linkedin</div>
-            <div class="contact_item contact_link">Github</div>
+            <a class="contact_item contact_link" href="#">Linkedin</a>
+            <a class="contact_item contact_link" href="https://github.com/AtifAShaikh">Github</a>
         </div>
-        <!-- <div class="line"></div> -->
     </section>
 </body>

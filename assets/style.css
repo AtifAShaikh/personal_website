@@ -37,14 +37,25 @@ header{
     color: whitesmoke;
 }
 
-.nav_link{
+a.nav_link {
     /* background-color: grey; */
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+ 
 }
+
+/* .nav_link{
+    
+    background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .header_title h1{
     font-weight: 100;
@@ -64,6 +75,22 @@ header{
 
 .nav_link:hover{
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 51, 0));
+}
+
+/* mobile menu css */
+a.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.menu_bar{
+    background-color: whitesmoke;
+    width: 30px;
+    height: 6px;
+    margin-top: 5px;
+    border-radius: 3px;
 }
 
 
@@ -239,8 +266,14 @@ section h1{
     border-radius: 20px;
 }
 
+
+.contact_item:hover{
+    background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 51, 0));
+}
+
 .contact_link{
-    text-decoration: underline;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -289,11 +322,38 @@ section h1{
         margin: 30px 40px;
         text-align: center;
     }
+
+    .contact_container{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 912px){
+    a.nav_link{
+        display: none;
+    }
+
+    a.menu{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right:10%;
+        padding: 0px 30px;
+    }
+    
 }
 
 @media screen and (max-width: 663px){
     .card_container{
         border-top-right-radius: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 560px){
+    a.menu{
+        padding: 0px 15px;
+        padding-right: 20px;
     }
     
 }
