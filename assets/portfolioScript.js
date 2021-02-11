@@ -1,5 +1,9 @@
 console.log("script started");
 
+var menu = document.querySelector("#menu");
+var side_nav = document.querySelector(".side_nav");
+
+
 document.getElementById("all").addEventListener("click", function(){
     var card_container = document.getElementById("card_container");
     var cards = document.getElementsByClassName("card");
@@ -53,3 +57,18 @@ document.getElementById("unity").addEventListener("click", function(){
         
     }
 });
+
+menu.addEventListener("click", function(){
+    if(side_nav.style.display === "block"){
+        side_nav.style.display = "none";
+    } else {
+        side_nav.style.display = "block";
+    }
+});
+
+window.addEventListener("resize", function(){
+    if(window.innerWidth > 912){
+        side_nav.style.display = "none";
+    }
+});
+

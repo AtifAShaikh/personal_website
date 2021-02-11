@@ -93,6 +93,22 @@ a.menu{
     border-radius: 3px;
 }
 
+.side_nav{
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+.side_nav .portfolio{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.side_nav .contact{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+}
+
 
 /* sections css */
 section{
@@ -276,6 +292,12 @@ section h1{
     color: black;
 }
 
+/* @media screen and (min-width: 912px){
+    .side_nav{
+        display: none;
+    }
+} */
+
 
 @media screen and (max-width: 1230px){
     .contact_container{
@@ -328,12 +350,13 @@ section h1{
     }
 }
 
+
 @media screen and (max-width: 912px){
-    a.nav_link{
+    header > a.nav_link{
         display: none;
     }
 
-    a.menu{
+    header >a.menu{
         display: flex;
         position: absolute;
         top: 20px;
@@ -351,9 +374,10 @@ section h1{
 }
 
 @media screen and (max-width: 560px){
-    a.menu{
+    header > a.menu{
         padding: 0px 15px;
         padding-right: 20px;
     }
     
 }
+
