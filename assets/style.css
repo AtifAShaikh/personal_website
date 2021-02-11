@@ -75,6 +75,7 @@ section{
     margin:20px auto;
     padding: 20px 0px 5px;
     border-radius: 25px;
+
 }
 
 section h1{
@@ -240,4 +241,59 @@ section h1{
 
 .contact_link{
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1230px){
+    .contact_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_item{
+        margin-top: 30px;
+    }
+
+    .section_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_me .section_content{
+        flex-direction: column;
+    }
+    
+    .about_me .section_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_me .section_content .image{
+        margin: 0px 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 20px;
+        padding-bottom: 60px;
+    
+    }
+
+    .about_me .section_content .blurb{
+
+        margin: 30px 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 663px){
+    .card_container{
+        border-top-right-radius: 0px;
+    }
+    
 }
