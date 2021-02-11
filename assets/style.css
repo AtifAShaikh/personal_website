@@ -108,6 +108,9 @@ section h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-bottom: 60px;
 
 }
 
@@ -119,12 +122,9 @@ section h1{
 }
 
 .my_image{
+    background-color: black;
     height: 300px;
     width: 300px;
-    border-radius: 30px;
-    border-width: 20px;
-    border-color:  rgb(255, 102, 0);
-    border-style: solid;
 }
 
 .blurb{
@@ -134,7 +134,7 @@ section h1{
 /* portfolio css */
 .portfolio_nav{
     display: flex;
-    margin-left: 50px;
+    margin-left: 0;
 }
 
 .port_tab{
@@ -166,6 +166,7 @@ section h1{
 .card_container{
     background-color:#eca85a;
     border-radius: 15px;
+    border-top-left-radius: 0px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
