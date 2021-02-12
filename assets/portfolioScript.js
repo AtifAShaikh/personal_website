@@ -1,9 +1,10 @@
-console.log("script started");
-
+// console.log("script started");
+// grabs main menu nav bar
 var menu = document.querySelector("#menu");
+// grabs side nav bar
 var side_nav = document.querySelector(".side_nav");
 
-
+// shows all cards and sets card container color to default
 document.getElementById("all").addEventListener("click", function(){
     var card_container = document.getElementById("card_container");
     var cards = document.getElementsByClassName("card");
@@ -15,6 +16,7 @@ document.getElementById("all").addEventListener("click", function(){
     
 });
 
+// shows only html cards and changes card container color
 document.getElementById("html").addEventListener("click", function(){
     var card_container = document.getElementById("card_container");
     var cards = document.getElementsByClassName("card");
@@ -30,6 +32,7 @@ document.getElementById("html").addEventListener("click", function(){
     }
 });
 
+// shows only wordpress cards and hides the rest and changes background color
 document.getElementById("wordpress").addEventListener("click", function(){
     var card_container = document.getElementById("card_container");
     var cards = document.getElementsByClassName("card");
@@ -44,6 +47,7 @@ document.getElementById("wordpress").addEventListener("click", function(){
     }
 });
 
+//  shows only unity cards and hides the rest and changes background color
 document.getElementById("unity").addEventListener("click", function(){
     var card_container = document.getElementById("card_container");
     var cards = document.getElementsByClassName("card");
@@ -58,6 +62,7 @@ document.getElementById("unity").addEventListener("click", function(){
     }
 });
 
+// shows drop down menu when menu symbol nav element is clicked
 menu.addEventListener("click", function(){
     if(side_nav.style.display === "block"){
         side_nav.style.display = "none";
@@ -66,6 +71,7 @@ menu.addEventListener("click", function(){
     }
 });
 
+// hides drop down menu when screen gets bigger
 window.addEventListener("resize", function(){
     if(window.innerWidth > 912){
         side_nav.style.display = "none";

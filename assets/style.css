@@ -2,12 +2,13 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* background gradient for the page */
 body{
     background-image: linear-gradient(rgb(137, 158, 253), rgb(255, 78, 47));
 }
 
-/* header css */
+/* header css, formats it to have a gradient
+round corners and centered  */
 header{
   width: 80%;
   margin: 0 auto;
@@ -16,16 +17,17 @@ header{
   flex-direction: row;
   flex-flow: row;
   border-radius: 25px;
-  /* background-color: grey; */
   background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
 }
 
+/* sets height and color of nav links */
 .header_title, .nav_link{
 
      height: 100px;
      color: whitesmoke;
 }
 
+/* css to center header content, has a flex of 3 to take up more space relative to nav links */
 .header_title{
     /* background-color: grey; */
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
@@ -37,6 +39,8 @@ header{
     color: whitesmoke;
 }
 
+
+/* css for nav links to center their content */
 a.nav_link {
     /* background-color: grey; */
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
@@ -57,27 +61,35 @@ a.nav_link {
     align-items: center;
 } */
 
+
+/* css for my name on the top */
 .header_title h1{
     font-weight: 100;
     font-size: 50px;
 }
 
+/* css for the text in each nav element */
 .nav_link h4{
     font-weight: 100;
     font-size: 17px;
 
 }
 
+
+/* rounds corners of the nav elements */
 .contact{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
+
+/* highlihgts the nav links when hovered */
 .nav_link:hover{
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 51, 0));
 }
 
 /* mobile menu css */
+/* css for menu symbol wrapper*/
 a.menu{
     display: flex;
     flex-direction: column;
@@ -85,6 +97,7 @@ a.menu{
     display: none;
 }
 
+/* css for the 3 lines that make up the menu symbol*/
 .menu_bar{
     background-color: whitesmoke;
     width: 30px;
@@ -93,17 +106,21 @@ a.menu{
     border-radius: 3px;
 }
 
+
+/* css for drop down nav */
 .side_nav{
     width: 80%;
     margin: 0 auto;
     display: none;
 }
 
+/* rounds corners of portfolio side nav element*/
 .side_nav .portfolio{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
 
+/* rounds and unrounds corners of contact side nav element */
 .side_nav .contact{
     border-top-right-radius: 0px;
     border-bottom-left-radius: 25px;
@@ -111,6 +128,7 @@ a.menu{
 
 
 /* sections css */
+/* css for the sectio wrapper */
 section{
     /* background-color: thistle; */
     background-image: linear-gradient(to bottom right, thistle, rgb(219, 175, 219));
@@ -121,6 +139,7 @@ section{
 
 }
 
+/* sets css for section title */
 section h1{
     background-color:transparent;
     margin: 20px 80px;
@@ -128,24 +147,27 @@ section h1{
     font-size: 40px;
 }
 
+/* css for section content wrapper */
 .section_content{
     margin: 20px 20px;
     background-color: transparent;
 
 }
 
-.line{
+/* .line{
     height: 6px;
     border-radius: 3px;
     background-color: black;
     margin: 0px 15px;
-}
+} */
 
 /* about me css */
+/* flexboxes the content for about me */
 .about_me .section_content{
     display: flex;
 }
 
+/* css for the main image to make it look like a polaroid */
 .about_me .section_content .image{
     margin: 0px 30px;
     background-color: transparent;
@@ -158,29 +180,31 @@ section h1{
 
 }
 
+/* css for the text blurb next to the name */
 .about_me .section_content .blurb{
 
     margin-top: 50px;
     margin-right: 30px;
     background-color: transparent;
+    font-size: 20px;
 }
 
+/* css for actualt image component of my image */
 .my_image{
     background-color: black;
     height: 300px;
     width: 300px;
 }
 
-.blurb{
-    font-size: 20px;
-}
 
 /* portfolio css */
+/* adds flexbox to portfolio nav */
 .portfolio_nav{
     display: flex;
     margin-left: 0;
 }
 
+/* css for the portfolio tabs */
 .port_tab{
     width: 120px;
     height: 40px;
@@ -191,6 +215,7 @@ section h1{
     border-top-left-radius: 15px;
 }
 
+/* sets background colors for respective tabs */
 .all{
     background-color: #eca85a;
 }
@@ -207,6 +232,7 @@ section h1{
     background-color: #00a698;
 }
 
+/* css for the card container as a flexbox */
 .card_container{
     background-color:#eca85a;
     border-radius: 15px;
@@ -219,6 +245,7 @@ section h1{
 }
 
 /* card css */
+/* css for the card to make it look like a polaroid */
 .card{
     width: 250px;
     margin: 20px 10px;
@@ -233,41 +260,23 @@ section h1{
     border-color: rgb(92, 92, 92); */
 }
 
+/* css for text underneath card */
 .card h3{
     font-weight: 100;
     margin: 10px 0px;
 }
 
+/* css to make image black for now */
 .card img{
     height: 240px;
     width: 240px;
     background-color: black;
 }
 
-.card .sub_area{
-    margin: 10px 0px;
-}
-
-/* card type css */
-
-/* .html_card{
-    background-color: #e22c57;
-    border-color: #8b1933;
-}
-
-.wp_card{
-    background-color: #2990c0;
-    border-color:#1a5672 ;
-}
-
-.unity_card{
-    background-color: #03bbac;
-    border-color: #017a70;
-
-} */
 
 /* contact me css */
 
+/* flex box contact me container */
 .contact_container{
     margin-top: 50px;
     margin-bottom: 40px;
@@ -275,6 +284,7 @@ section h1{
     justify-content: space-evenly;
 }
 
+/* css for each contact item */
 .contact_item{
     font-size: 20px;
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 102, 0));
@@ -282,11 +292,12 @@ section h1{
     border-radius: 20px;
 }
 
-
+/* highlights contact me items when hovered */
 .contact_item:hover{
     background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 51, 0));
 }
 
+/* removes underlines and colors from anchors */
 .contact_link{
     text-decoration: none;
     color: black;
@@ -299,17 +310,21 @@ section h1{
 } */
 
 
+/* css for screen smaller than 1230 px */
 @media screen and (max-width: 1230px){
+    /* contact container elements go vertical */
     .contact_container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    /* spaces out contact items */
     .contact_item{
         margin-top: 30px;
     }
 
+    /* centers section titles */
     .section_title {
         display: flex;
         flex-direction: column;
@@ -317,16 +332,15 @@ section h1{
         align-items: center;
     }
 
+    /* puts text blurb underneath image in about me section */
     .about_me .section_content{
         flex-direction: column;
-    }
-    
-    .about_me .section_content{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    /* sets css for image with smaller screen */
     .about_me .section_content .image{
         margin: 0px 30px;
         width: 300px;
@@ -339,23 +353,28 @@ section h1{
     
     }
 
+    /* centers text blurb */
     .about_me .section_content .blurb{
 
         margin: 30px 40px;
         text-align: center;
     }
 
+    /* spaces stuff close together */
     .contact_container{
         margin-top: 0px;
     }
 }
 
-
+/* css for when screen is smaller than 912 */
 @media screen and (max-width: 912px){
+
+    /* hides nav bar */
     header > a.nav_link{
         display: none;
     }
 
+    /* shows menu logo option */
     header >a.menu{
         display: flex;
         position: absolute;
@@ -366,14 +385,18 @@ section h1{
     
 }
 
+/* css when screen gets smaller than 663px */
 @media screen and (max-width: 663px){
+    /* unrounds top right corner of portfolio */
     .card_container{
         border-top-right-radius: 0px;
     }
     
 }
 
+/* css for when screen is smaller than 560px */
 @media screen and (max-width: 560px){
+    /* keeps menu symbol from overlapping title */
     header > a.menu{
         padding: 0px 15px;
         padding-right: 20px;

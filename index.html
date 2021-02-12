@@ -1,138 +1,170 @@
 <!DOCTYPE html>
-<head>
-    <title>Atif Shaikh</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <header>
-        <div class="header_title">
-            <h1>Atif Shaikh</h1>
-        </div>
-        <a href="#portfolio" class="nav_link main_nav">
+<html>
+    <head>
+        <title>Atif Shaikh</title>
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <!-- main header -->
+        <header>
+            <!-- name section of header, contains h1 -->
+            <div class="header_title">
+                <h1>Atif Shaikh</h1>
+            </div>
+            <!-- links to portfolio section -->
+            <a href="#portfolio" class="nav_link main_nav">
                 <h4>Portfolio</h4>
-        </a>
-        <a href="" class="nav_link main_nav">
+            </a>
+            <!-- links to resume(WiP) -->
+            <a href="" class="nav_link main_nav">
                 <h4>Resume</h4>
-        </a>
-        <a href="https://github.com/AtifAShaikh" class="nav_link main_nav">
+            </a>
+            <!-- links to github -->
+            <a href="https://github.com/AtifAShaikh" class="nav_link main_nav">
                 <h4>Github</h4>
-        </a>
-        <a href="" class="nav_link main_nav">
+            </a>
+            <!-- links to linked in -->
+            <a href="" class="nav_link main_nav">
                 <h4>Linkedin</h4>
-        </a>
-        <a href="#contact" class="nav_link contact main_nav">
+            </a>
+            <!-- links to contact me section-->
+            <a href="#contact" class="nav_link contact main_nav">
                 <h4>Contact Me</h4>
-        </a>
-        <a class="nav_link contact menu" id="menu">
-            <div class="menu_bar"></div>
-            <div class="menu_bar"></div>
-            <div class="menu_bar"></div>
-        </a>
-    </header>
-
-    <div class="side_nav">
-        <a href="#portfolio" class="nav_link portfolio">
-            <h4>Portfolio</h4>
-        </a>
-        <a href="" class="nav_link">
-                <h4>Resume</h4>
-        </a>
-        <a href="https://github.com/AtifAShaikh" class="nav_link">
-                <h4>Github</h4>
-        </a>
-        <a href="" class="nav_link">
-                <h4>Linkedin</h4>
-        </a>
-        <a href="#contact" class="nav_link contact">
-                <h4>Contact Me</h4>
-        </a>
-    </div>
-
-    <section class="about_me">
-        <div class="section_title">
-            <h1>About Me</h1>
+            </a>
+            <!-- menu icon for when nav gets smaller -->
+            <a class="nav_link contact menu" id="menu">
+                <div class="menu_bar"></div>
+                <div class="menu_bar"></div>
+                <div class="menu_bar"></div>
+            </a>
+        </header>
+        
+        <!-- drop down menu for when the nav gets smaller -->
+        <div class="side_nav">
+            <a href="#portfolio" class="nav_link portfolio">
+                <h4>Portfolio</h4>
+            </a>
+            <a href="" class="nav_link">
+                    <h4>Resume</h4>
+            </a>
+            <a href="https://github.com/AtifAShaikh" class="nav_link">
+                    <h4>Github</h4>
+            </a>
+            <a href="" class="nav_link">
+                    <h4>Linkedin</h4>
+            </a>
+            <a href="#contact" class="nav_link contact">
+                    <h4>Contact Me</h4>
+            </a>
         </div>
-        <div class="section_content">
-            <div class="image">
-                <img src="" class="my_image">
+        
+        <!-- about me section -->
+        <section class="about_me">
+            <!-- about me title -->
+            <div class="section_title">
+                <h1>About Me</h1>
             </div>
-            <div class="blurb">
-                Hello, My name is Atif Shaikh. I am an aspiring web developer and programmer.
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="section_title" id="portfolio">
-            <h1>Portfolio</h1>
-        </div>
-        <div class="section_content">
-            <div class="portfolio">
-                <div class="portfolio_nav">
-                    <div class="port_tab all" id="all">
-                        <h5>All</h5>
-                    </div>
-                    <div class="port_tab html" id="html">
-                        <h5>HTML</h5>
-                    </div>
-                    <div class="port_tab wordpress" id="wordpress">
-                        <h5>Wordpress</h5>
-                    </div>
-                    <div class="port_tab unity" id="unity">
-                        <h5>Unity</h5>
-                    </div>
+            <!-- content wrapper -->
+            <div class="section_content">
+                <!-- main image -->
+                <div class="image">
+                    <img src="" class="my_image">
                 </div>
-                <div class="card_container" id="card_container">
-                    <div class="card html_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card html_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card html_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card wp_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card wp_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card unity_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card unity_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card unity_card">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="card test">
-                        <img>
-                        <h3>Title</h3>
-                    </div>
+                <!-- text next to image, or below depending on width -->
+                <div class="blurb">
+                    Hello, My name is Atif Shaikh. I am an aspiring web developer and programmer.
                 </div>
             </div>
-        </div>
-        <script src="./assets/portfolioScript.js"></script>
-    </section>
-    <section id="contact">
-        <div class="section_title">
-            <h1>Contact Me</h1>
-        </div>
-        <div class="section_content contact_container">
-            <div class="contact_item">Phone: 310-755-5217</div>
-            <div class="contact_item">Email: atifsha05@gmail.com</div>
-            <a class="contact_item contact_link" href="#">Linkedin</a>
-            <a class="contact_item contact_link" href="https://github.com/AtifAShaikh">Github</a>
-        </div>
-    </section>
-</body>
+        </section>
+
+        <!-- portfolio section -->
+        <section>
+            <!-- section title -->
+            <div class="section_title" id="portfolio">
+                <h1>Portfolio</h1>
+            </div>
+            <!-- content wrapper -->
+            <div class="section_content">
+                <!-- portfolio wrapper -->
+                <div class="portfolio">
+                    <!-- portfolio nav wrapper -->
+                    <div class="portfolio_nav">
+                        <!-- these are the tabs of the portfolio allowing us to filter projects -->
+                        <div class="port_tab all" id="all">
+                            <h5>All</h5>
+                        </div>
+                        <div class="port_tab html" id="html">
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="port_tab wordpress" id="wordpress">
+                            <h5>Wordpress</h5>
+                        </div>
+                        <div class="port_tab unity" id="unity">
+                            <h5>Unity</h5>
+                        </div>
+                    </div>
+                    <!-- card container wrapper -->
+                    <div class="card_container" id="card_container">
+                        <!-- these are individual wrappers that hold images, will replace h3 with anchor once i have projects to link to -->
+                        <!-- each div consists of an image and a text element below it -->
+                        <div class="card html_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card html_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card html_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card wp_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card wp_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card unity_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card unity_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card unity_card">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card test">
+                            <img>
+                            <h3>Title</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- script that controls the portfolio and the collapsable nav-->
+            <script src="./assets/portfolioScript.js"></script>
+        </section>
+
+        <!-- contact me section -->
+        <section id="contact">
+            <!-- section title -->
+            <div class="section_title">
+                <h1>Contact Me</h1>
+            </div>
+            <!-- content wrapper -->
+            <div class="section_content contact_container">
+                <!-- links and divs for various contact infos -->
+                <div class="contact_item">Phone: 310-755-5217</div>
+                <div class="contact_item">Email: atifsha05@gmail.com</div>
+                <a class="contact_item contact_link" href="#">Linkedin</a>
+                <a class="contact_item contact_link" href="https://github.com/AtifAShaikh">Github</a>
+            </div>
+        </section>
+    </body>
+</html>
