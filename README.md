@@ -17,3 +17,4 @@ It has a sunset color theme with a clean design and responsive design
 # Upcoming Features
 - currently the links to the resume and linkedin do not work intentionally as they are not ready yet, will work when they are done
 - project cards do not link to projects yet as I still have to curate and put projects on github
+- transition portfolio to a swipe left and right model once sufficiently small
